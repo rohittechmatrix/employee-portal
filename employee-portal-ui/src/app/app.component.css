@@ -21,6 +21,18 @@ h3,h4 {
   justify-content: center;
 }
 
+.filter-label {
+  margin-left: 10%;
+}
+
+:host ::ng-deep mat-form-field {
+  margin-left: 1%;
+  margin-bottom: 10px;
+  margin-top: -5px;
+  width: 63%;
+  border-bottom: 0.5px solid black;
+}
+
 tr.employee-detail-row {
   height: 0;
 }
@@ -47,7 +59,7 @@ tr.employee-element-row:not(.employee-expanded-row):active {
   border: 2px solid black;
   font-weight: lighter;
   margin: 8px 0;
-  height: 100px;
+  height: 115px;
 }
 
 .employee-details-heading {

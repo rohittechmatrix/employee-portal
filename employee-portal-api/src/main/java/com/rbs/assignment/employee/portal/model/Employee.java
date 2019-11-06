@@ -11,38 +11,48 @@ import javax.persistence.Table;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 /**
+ * Entity to represent Employee table.
  * 
  * @author rohit
  *
  */
 @Entity
 @Table(name = "EMPLOYEE_DETAILS")
+@ApiModel(description = "Employee Model contains all attributes abouy employee.")
 public class Employee {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@ApiModelProperty(notes = "The database generated employee ID")
 	private Long id;
 
 	@Column(name = "name", nullable = false)
+	@ApiModelProperty(notes = "The name of employee")
 	private String name;
 
 	@Max(value = 999_999_999)
 	@Column(name = "salary", nullable = false)
+	@ApiModelProperty(notes = "The salary of employee")
 	private Integer salary;
 
 	@NotNull
 	@Column(name = "hire_date", nullable = false)
+	@ApiModelProperty(notes = "The hireDate of employee")
 	private LocalDate hireDate;
 
 	/**
-	 * 
+	 * Non-parameterized constructor.
 	 */
 	public Employee() {
 		super();
 	}
 
 	/**
+	 * Parameterized constructor with all fields
 	 * 
 	 * @param id
 	 * @param name
@@ -89,9 +99,6 @@ public class Employee {
 		this.hireDate = hireDate;
 	}
 
-	/**
-	 * 
-	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -100,9 +107,6 @@ public class Employee {
 		return result;
 	}
 
-	/**
-	 * 
-	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -120,9 +124,6 @@ public class Employee {
 		return true;
 	}
 
-	/**
-	 * 
-	 */
 	@Override
 	public String toString() {
 		return "Employee [getId()=" + getId() + ", getName()=" + getName() + ", getSalary()=" + getSalary()

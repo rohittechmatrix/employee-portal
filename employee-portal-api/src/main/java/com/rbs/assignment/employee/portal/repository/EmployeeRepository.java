@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.rbs.assignment.employee.portal.model.Employee;
 
 /**
+ * JPA repository for aEmployee
  * 
  * @author rohit
  *

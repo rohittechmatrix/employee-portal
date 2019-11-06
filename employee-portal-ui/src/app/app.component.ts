@@ -1,5 +1,5 @@
-import {Component, ViewChild} from '@angular/core';
-import {animate, state, style, transition, trigger} from '@angular/animations';
+import { Component, ViewChild } from '@angular/core';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { MatSort, MatTableDataSource, MatPaginator } from '@angular/material';
 import { ApiService } from './api.service';
 import { Employee } from './employee';
@@ -10,15 +10,15 @@ import { Employee } from './employee';
   templateUrl: './app.component.html',
   animations: [
     trigger('detailExpand', [
-      state('collapsed', style({height: '0px', minHeight: '0', display: 'none'})),
-      state('expanded', style({height: '*'})),
+      state('collapsed', style({ height: '0px', minHeight: '0', display: 'none' })),
+      state('expanded', style({ height: '*' })),
       transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
     ]),
   ],
 })
 
 export class AppComponent {
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService) { }
   dataSource = new MatTableDataSource();
   columnsToDisplay = ['id', 'name', 'salary', 'hireDate'];
 
@@ -33,5 +33,8 @@ export class AppComponent {
     );
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
-    }
+  }
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 }
