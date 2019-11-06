@@ -53,13 +53,18 @@ maven
 
 ### Design
 
-* [Screen Designs](Screen Designs/Screens.md)
+* Screen Designs
+ * [Employees List](ScreenDesigns/EmployeesList.png)
+ * [Employees List Sorted By Hire Date](ScreenDesigns/EmployeesListSortedByHireDate.png)
+ * [Employees List Sorted By Salary](ScreenDesigns/EmployeesListSortedBySalary.png)
+ * [Employee List Sort By Name](ScreenDesigns/EmployeeListSortByName.png)
+ * [Employee List Filtered](ScreenDesigns/EmployeeListFiltered.png)
+ * [Employee Detail](ScreenDesigns/EmployeeDetail.png)
 
 ### Project Planning docs
 
-* [Class Diagram](Planning docs/Class Diagram.jpg)
-* [Sequence Diagram](Planning docs/Sequence Diagram.png)
-* [API Docs](Planning docs/Swagger UI.html)
+* [Class Diagram](PlanningDocs/Class-Diagram.jpg)
+* [Sequence Diagram](PlanningDocs/Sequence-Diagram.png)
 
 For any questions/comments feel free to reach me at <b>rohitforambition@gmail.com</b>
 <b>Author</b>
