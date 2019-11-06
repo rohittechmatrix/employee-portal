@@ -57,9 +57,9 @@ maven
 
 ### Project Planning docs
 
-* [Class Diagram](Planning docs/class_diagram.md)
-* [Sequence Diagram](Planning docs/sequence_diagram.md)
-* [API Docs](Planning docs/api_docs.md)
+* [Class Diagram](Planning docs/Class Diagram.jpg)
+* [Sequence Diagram](Planning docs/Sequence Diagram.png)
+* [API Docs](Planning docs/Swagger UI.html)
 
 For any questions/comments feel free to reach me at <b>rohitforambition@gmail.com</b>
 <b>Author</b>
