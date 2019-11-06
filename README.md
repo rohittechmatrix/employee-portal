@@ -7,7 +7,7 @@ The is an application with basic features like :
 4. Filtering of employee records.
 3. Viewing any single employee in detail.
 
-Some assumptions/notes about the design/code
+<b>Some assumptions/notes about the design/code</b>
 1. Since data was small and less attributes were there about Employee so instead of making another hit to get employee detail
 used stored data in employee list and shown in same table only.
 2. For the cases having more employee details , methods are already written there on UI and backend side just not called currently.
@@ -15,13 +15,13 @@ Those can be called and details can be shown in a popup or new section too.
 3. For features like sorting, filering, pagination currently used angular mat table features as data was small for UI operations.
 as per requirement we can have these things configured in our APIs using Spring-data-JPA methods
 
-This repository contains following :
+<b>This repository contains following :</b>
 1. employee-portal-api (Spring boot rest api)
 2. employee-portal-ui (Angular 6 UI app)
 3. Planning docs (Class diagram , sequence diagram , API doc generated via swagger)
 4. Screen Designs (Screenshot of working app with all features)
 
-Tech-stack :
+<b>Tech-stack :</b>
 
 UI
 A single-page-application based on Angular 6.
@@ -51,6 +51,11 @@ maven
 1. You can import api project as an existing maven app in eclipse
 2. You can open ui project in ide like visual studio code 
 
+### Project Planning docs
+
+* [Class Diagram](PlanningDocs/Class-Diagram.jpg)
+* [Sequence Diagram](PlanningDocs/Sequence-Diagram.png)
+
 ### Design
 
 * Screen Designs
@@ -61,10 +66,6 @@ maven
  * [Employee List Filtered](ScreenDesigns/EmployeeListFiltered.png)
  * [Employee Detail](ScreenDesigns/EmployeeDetail.png)
 
-### Project Planning docs
-
-* [Class Diagram](PlanningDocs/Class-Diagram.jpg)
-* [Sequence Diagram](PlanningDocs/Sequence-Diagram.png)
 
 For any questions/comments feel free to reach me at <b>rohitforambition@gmail.com</b>
 <b>Author</b>
